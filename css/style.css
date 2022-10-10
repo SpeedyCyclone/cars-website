@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  background-color: #6200ee;
+}
+
+nav {
+  background: #03dac5;
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+
+label.name {
+  color: #023020;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  padding-right: 300px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 10px;
+  item-align: left;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 25px;
+  list-style: none;
+  margin-left: 1px;
+  padding-left: 1px;
+  text-align: left;
+  justify-content: left;
+  item-align: left;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+a.active,
+a:hover {
+  background: #cdf0ea;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.showcase {
+  background-color:   #bb86fc;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.img1 {
+  margin-top: 25px;
+  height: 400;
+  width: auto;
+  margin-left: 100px;
+}
+
+.headingdiv {
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+.heading {
+  display: inline-block;
+  text-align: right;
+  font-family: "Poppins";
+}
+
+.moon,
+.sun {
+  height: 40px;
+  width: 40px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+  margin-left: 400px;
+  margin-top: 15px;
+}
+
+.products {
+  padding: 0 12.5%;
+}
+
+.cards {
+  height: 400px;
+  width: 30%;
+  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 10px 15px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.cards:hover {
+  box-shadow: 20px 30px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.carsimg {
+  height: 200;
+  width: 300;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.headingcar {
+  font-size: 30px;
+  font-family: montserrat;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.aboutpara {
+  padding-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  color: #64391c;
+}
+
+.buybtn {
+  border-radius: 5px;
+  padding: 5px;
+  border-color: transparent;
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+}
