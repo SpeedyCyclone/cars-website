@@ -156,6 +156,7 @@ a:hover {
 
 .aboutpara {
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .price {
@@ -375,4 +376,137 @@ textarea {
   text-align: center;
   float: right;
   margin-right: 400px;
+}
+
+.productpagecard {
+  height: 105%;
+  width: 80%;
+  margin: auto;
+  box-shadow: 10px 15px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fcf8e8;
+  padding-bottom: 10px;
+  display: inline-block;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.herewegoagain {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 10px;
+}
+
+.herewegoagain1 {
+  height: 150px;
+  width: 150px;
+  float: right;
+  border-radius: 50%;
+  width: 25%;
+  margin-right: 30px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.ahhshit {
+  font-size: 36px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.frustation {
+  margin-top: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.pricetag {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: darkred;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.buybtn2 {
+  border-radius: 5px;
+  padding: 5px;
+  border-color: transparent;
+  background-color: yellow;
+  color: black;
+  margin-top: 30px;
+  float: right;
+  margin-right: 496px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.wrapper {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%;
+  padding-top: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.usp {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.usp li {
+  float: left;
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+  list-style-type: none;
+}
+
+.usp li img {
+  height: 80px;
+  padding: 20px;
+  background-color: coral;
+}
+
+.usp li h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.usp::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div {
+  display: block;
+}
+
+.usph2 {
+  margin-top: 20px;
+  color: white;
 }
