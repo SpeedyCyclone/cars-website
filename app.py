@@ -52,6 +52,11 @@ def main(path):
         if request.cookies.get('user')!=None:
             return toreturn.replace("Login",request.cookies.get('user')) 
         return toreturn
+    if path=="checkout":
+        toreturn=open("checkout.html").read().replace("{price}",args["price"]).replace("{total_price}",str(float(args["price"])+2))
+        if request.cookies.get('user')!=None:
+            return toreturn.replace("Login",request.cookies.get('user')) 
+        return redirect("/login")
     if path=="user":
         if request.cookies.get('user') in os.listdir("users"):
             if json.loads(open("users/"+request.cookies.get('user')).read())["key"]==request.cookies.get('key'):
