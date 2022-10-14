@@ -80,7 +80,7 @@ a:hover {
 .img1 {
   margin-top: 25px;
   height: 400;
-  width: auto;
+  max-width: 100%;
   margin-left: 100px;
 }
 
@@ -633,4 +633,10 @@ div {
   align-items: center;
   margin-top: 10px;
   color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .img1 {
+    width: 100%;
+  }
 }
