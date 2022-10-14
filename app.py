@@ -48,7 +48,10 @@ def main(path):
     if path=="product":
         car=args["car"]
         data=json.loads(open("cars/"+car).read())
-        return open("productprofile.html").read().replace("{car_img}",data["image"]).replace("{data1}",lorem_ipsum).replace("{data2}",lorem_ipsum).replace("{price}",str(data["price"])).replace("{car_name}",data["name"])
+        toreturn=open("productprofile.html").read().replace("{car_img}",data["image"]).replace("{data1}",lorem_ipsum).replace("{data2}",lorem_ipsum).replace("{price}",str(data["price"])).replace("{car_name}",data["name"])
+        if request.cookies.get('user')!=None:
+            return toreturn.replace("Login",request.cookies.get('user')) 
+        return toreturn
     if path=="user":
         if request.cookies.get('user') in os.listdir("users"):
             if json.loads(open("users/"+request.cookies.get('user')).read())["key"]==request.cookies.get('key'):
