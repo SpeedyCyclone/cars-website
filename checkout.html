@@ -25,48 +25,65 @@
         <li><a href="/" id="a1">Home</a></li>
         <li id="hi"><a href="about" id="hi">About Us</a></li>
         <li><a href="products" id="a1">Products</a></li>
-        <li><a class="active" href="contact" id="a1">Contact</a></li>
+        <li><a href="contact" id="a1">Contact</a></li>
         <li><a href="user" id="a1">Login</a></li>
         <img id="moon" src="img/moon.png" class="moon" onclick="changeBG()" />
       </ul>
     </nav>
+    <h1 class="checkout">Checkout</h1>
     <form>
       <div class="input-group">
-        <label for="name">First Name</label>
+        <label for="name">Full Name</label>
         <input
           type="text"
           name="Name"
           id="Name"
-          placeholder="First Name"
+          placeholder="Full Name"
           required
         />
       </div>
 
       <div class="input-group">
-        <label for="father">Last Name</label>
+        <label for="email">Email</label>
         <input
-          type="text"
-          name="Name"
-          id="Name"
-          placeholder="Last Name"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johndoe@gmail.com"
           required
         />
       </div>
 
       <div class="input-group">
-        <label for="father">Title</label>
-        <input type="text" name="Name" id="Name" placeholder="Title" required />
+        <label for="phone">Phone Number</label>
+        <input type="number" name="Mobile no" id="Mobile no" required />
       </div>
 
       <div class="input-group">
-        <label for="address">Message</label>
+        <label for="address">Address</label>
         <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
+          id="Address"
+          name="Address"
+          placeholder="Address"
           required
         ></textarea>
       </div>
+
+      <div class="input-group">
+        <label for="name">City</label>
+        <input type="text" name="Name" id="Name" placeholder="City" required />
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Pin Code</label>
+        <input type="number" name="Mobile no" id="Mobile no" required />
+      </div>
+
+      <p class="priceoof">Price: $3.99</p>
+      <p class="priceoof">Delivery Charge: $2.00</p>
+      <p class="priceoof">Total Price: $5.99</p>
+      <p class="priceoof">Mode of Payment: Cash on Delivery</p>
+
       <div class="input-group">
         <button type="submit" value="Submit" id="submit">Submit</button>
       </div>
