@@ -2,6 +2,10 @@ from flask import Flask,request,send_file,redirect,make_response
 app = Flask(__name__)
 import os,json
 
+lorem_ipsum="""
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+"""
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def main(path):
@@ -41,6 +45,10 @@ def main(path):
             return resp
     if path=="signup":
         return send_file("reg.html")
+    if path=="product":
+        car=args["car"]
+        data=json.loads(open("cars/"+car).read())
+        return open("productprofile.html").read().replace("{car_img}",data["image"]).replace("{data1}",lorem_ipsum).replace("{data2}",lorem_ipsum).replace("{price}",str(data["price"])).replace("{car_name}",data["name"])
     if path=="user":
         if request.cookies.get('user') in os.listdir("users"):
             if json.loads(open("users/"+request.cookies.get('user')).read())["key"]==request.cookies.get('key'):
