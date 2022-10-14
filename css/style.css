@@ -375,11 +375,11 @@ textarea {
   align-self: center;
   text-align: center;
   float: right;
-  margin-right: 400px;
+  margin-right: 270px;
 }
 
 .productpagecard {
-  height: 105%;
+  height: 90%;
   width: 80%;
   margin: auto;
   box-shadow: 10px 15px 5px 2px rgba(0, 0, 0, 0.25);
