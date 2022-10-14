@@ -123,7 +123,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
-  box-shadow: 10px 15px 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 7.5px 2.5px 1px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: #ffffff;
   padding-bottom: 10px;
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .cards:hover {
-  box-shadow: 20px 30px 10px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 15px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .carsimg {
@@ -509,4 +509,18 @@ div {
 .usph2 {
   margin-top: 20px;
   color: white;
+}
+
+.seemore {
+  margin-top: 20px;
+  background-color: transparent;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  color: white;
+}
+
+.seemore1 {
+  text-align: center;
+  margin-top: 20px;
 }
