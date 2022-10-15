@@ -6,3 +6,5 @@
 
 ### Drive Link
 https://drive.google.com/drive/folders/1wK1lNFWR0ZiQnI-qeOEE-ttlX3X6uO3j?usp=sharing
+
+Deployed at http://34.93.89.61:1234/
